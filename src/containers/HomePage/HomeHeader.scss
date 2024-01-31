@@ -1,0 +1,219 @@
+.home-header-container {
+    height: 60px;
+    width : 100%;
+
+    padding: 0 20px;
+
+
+    .Home-header-content {
+        height : 100%;
+        width  : 100%;
+        display: flex;
+
+        .left-content {
+            width: 25%;
+
+            display    : flex;
+            align-items: center;
+
+            .menu-header {
+                font-size: 25px;
+                color    : grey;
+                cursor   : pointer;
+            }
+
+            .header-logo {
+                background: url('../../assets/logo.svg') center no-repeat;
+                height    : 500%;
+                width     : 50%;
+
+            }
+        }
+
+        .center-content {
+            width          : 50%;
+            display        : flex;
+            align-items    : center;
+            justify-content: space-between;
+
+            .child-content {
+                .sub-titles {
+                    font-size  : 12px;
+                    font-weight: 400
+                }
+            }
+
+        }
+
+        .right-content {
+            width          : 25%;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+        }
+
+        .support {
+            padding-right: 50px;
+            align-items  : center;
+            display      : flex;
+
+            i {
+                font-size   : 15px;
+                margin-right: 5px;
+            }
+        }
+
+        .language-vi {
+            cursor : pointer;
+            opacity: 0.2;
+
+            &.action {
+                opacity: 1;
+
+                span {
+                    color: orange;
+                }
+
+            }
+
+            &:hover {
+                opacity: 0.8;
+
+                span {
+                    color: orange;
+                }
+
+            }
+        }
+
+        .language-en {
+            cursor : pointer;
+            opacity: 0.2;
+            margin : 0 10px;
+
+            &.action {
+                opacity: 1;
+
+                span {
+                    color: blue;
+                }
+
+            }
+
+            &:hover {
+                opacity: 0.8;
+
+                span {
+                    color: blue;
+                }
+
+            }
+        }
+    }
+}
+
+.home-header-banner {
+    background         : url('../../assets/headerbackground.jpg');
+    height             : 485px;
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+    display            : flex;
+    flex-direction     : column;
+
+
+    .content-up {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(126, 126, 126, 0.25));
+        ;
+        height     : 65%;
+        padding-top: 15px;
+
+        .banner-title {
+            text-align   : center;
+            font-size    : 30px;
+            text-shadow  : 1px 1px 1px #333;
+            color        : white;
+            margin-top   : 30px;
+            margin-bottom: 5px;
+        }
+
+        .banner-sub-title {
+            text-align   : center;
+            font-size    : 30px;
+            text-shadow  : 1px 1px 1px #333;
+            color        : white;
+            margin-bottom: 15px;
+        }
+
+        .search-banner {
+            width          : fit-content;
+            display        : flex;
+            justify-content: center;
+            align-items    : center;
+            margin         : 0 auto;
+            padding        : 10px;
+            border-radius  : 25px;
+
+            background: #b6d652;
+
+            i {
+                margin: 0 5px;
+            }
+
+            input {
+                height    : 30px;
+                width     : 360px;
+                background: transparent;
+                border    : none;
+                outline   : none;
+            }
+        }
+    }
+
+    .content-down {
+        padding-bottom  : 10px;
+        height          : 35%;
+        display         : flex;
+        align-items     : flex-end;
+        justify-content : center;
+        background-image: linear-gradient(rgba(126, 126, 126, 0.25), rgba(255, 255, 255, 1));
+
+        .options {
+            gap            : 50px;
+            text-align     : center;
+            display        : flex;
+            justify-content: center;
+
+            .option-child {
+                width: 100px;
+
+                .icon-child {
+                    background   : white;
+                    width        : 40px;
+                    height       : 40px;
+                    padding      : 10px;
+                    border-radius: 50%;
+                    text-align   : center;
+                    margin       : 0 auto;
+
+                    i {
+                        color: #0e92cc
+                    }
+                }
+
+                .text-child {
+                    font-size  : 17px;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: #0e92cc
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+}

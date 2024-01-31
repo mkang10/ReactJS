@@ -1,4 +1,31 @@
-{
+{   
+    "homeheader":{
+
+        "speciality" : "specialty",
+        "Search-doctor" :"Find a doctor by specialty",
+        "Health-facility" : "Health facilities",
+        "select-room" : "Choose hospital",
+        "doctor" : "Doctor",
+        "select-doctor" : "Choose Doctor",
+        "fee" : "Fee",
+        "check-health" : "Generald Checkup",
+        "support" : "Support"
+    
+    },
+    "banner" : {
+        "medical" : "Professional medical",
+        "comprehensive-health" : "care based on comprehensive health care",
+        "find-specialty" : "find specialty ?"
+    },
+
+    "option" : {
+        "specialized" : "Specialized health checkup",
+        "telehealth"  : "tele health",
+        "generald-examination" : "generald examination",
+        "medicine-test" : "medicine test",
+        "mind-health" : "mind health",
+        "dental" : "dental"
+    },
     "common": {
         "add": "Add",
         "edit": "Edit",
