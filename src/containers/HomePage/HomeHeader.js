@@ -10,7 +10,7 @@ class HomeHeader extends Component {
     }
     render() {
         let language = this.props.language;
-        console.log("check language", language)
+        console.log("check user Info", this.props.userInfo)
 
         return (
             <>
@@ -104,7 +104,8 @@ class HomeHeader extends Component {
 const mapStateToProps = state => {
     return {
         isLoggedIn: state.user.isLoggedIn,
-        language: state.app.language
+        language: state.app.language,
+        userInfo: state.user.userInfo
     };
 };
 

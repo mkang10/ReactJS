@@ -125,7 +125,7 @@ class Login extends Component {
 
 const mapStateToProps = state => {
     return {
-        language: state.app.language
+        language: state.app.language,
     };
 };
 
@@ -133,7 +133,7 @@ const mapDispatchToProps = dispatch => {
     return {
         navigate: (path) => dispatch(push(path)),
         // userLoginFail: () => dispatch(actions.userLoginFail()),
-        userLoginSucess: (userInfor) => dispatch(actions.userLoginSucess(userInfor))
+        userLoginSucess: (userInfo) => dispatch(actions.userLoginSucess(userInfo))
     };
 };
 

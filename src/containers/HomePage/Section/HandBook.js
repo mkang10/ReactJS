@@ -1,47 +1,47 @@
 import React, { Component } from 'react';
-import './MedicalFacility.scss';
 import { connect } from 'react-redux';
 import { FormattedMessage } from 'react-intl';
 import Slider from 'react-slick';
+class HandBook extends Component {
 
-class MedicalFacility extends Component {
 
     render() {
 
+
         return (
-            <div className='section-share section-medical-facility'>
+            <div className='section-handBook section-share'>
 
                 <div className='section-container'>
                     <div className='section-container'>
                         <div className='section-header'>
-                            <span className='title-section'>Cơ sở y tế nổi bật</span>
+                            <span className='title-section'>Cẩm Nang</span>
                             <button className='btn-section'>Xem thêm</button>
                         </div>
                         <div className='section-body'>
                             <Slider {...this.props.settings}>
                                 <div className='section-customize'>
-                                    <div className='bone-img section-medical-facility  '></div>
-                                    <div>Bệnh Viện Y Khoa Quận 7 1</div>
+                                    <div className='bone-img section-handBook'></div>
+                                    <div>Cơ xương khớp 1</div>
                                 </div>
                                 <div className='section-customize'>
-                                    <div className='bone-img section-medical-facility '></div>
-                                    <div>Bệnh Viện Y Khoa Quận 7 2</div>
+                                    <div className='bone-img section-handBook'></div>
+                                    <div>Cơ xương khớp 2</div>
                                 </div>
                                 <div className='section-customize'>
-                                    <div className='bone-img section-medical-facility '></div>
-                                    <div>Bệnh Viện Y Khoa Quận 7 3</div>
+                                    <div className='bone-img section-handBook'></div>
+                                    <div>Cơ xương khớp 3</div>
                                 </div>
                                 <div className='section-customize'>
-                                    <div className='bone-img section-medical-facility '></div>
-                                    <div>Bệnh Viện Y Khoa Quận 7 4</div>
+                                    <div className='bone-img section-handBook'></div>
+                                    <div>Cơ xương khớp 4</div>
                                 </div>
                                 <div className='section-customize'>
-                                    <div className='bone-img section-medical-facility '></div>
-                                    <div>Bệnh Viện Y Khoa Quận 7 5</div>
+                                    <div className='bone-img section-handBook'></div>
+                                    <div>Cơ xương khớp 5</div>
                                 </div>
                                 <div className='section-customize'>
-                                    <div className='bone-img section-medical-facility '></div>
-                                    <div>Bệnh Viện Y Khoa Quận 7 6</div>
+                                    <div className='bone-img section-handBook'></div>
+                                    <div>Cơ xương khớp 6</div>
                                 </div>
 
                             </Slider>
@@ -52,20 +52,27 @@ class MedicalFacility extends Component {
             </div>
 
 
-
         );
     }
+
+
 }
 
 const mapStateToProps = state => {
     return {
-        isLoggedIn: state.user.isLoggedIn
+
     };
 };
 
 const mapDispatchToProps = dispatch => {
+    // return {
+    //     changeLanguageAppRedux: (language) => dispatch(changeLanguageApp(language))
+    // };
     return {
-    };
+
+
+
+    }
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(MedicalFacility);
+export default connect(mapStateToProps, mapDispatchToProps)(HandBook);
